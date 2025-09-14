@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            .nav-button{
+                padding: 10px 10px;
+            }
+            a{
+                margin:0px 5px;
+            }
+            #stretch{
+                background-color: green;
+                border:none;
+                color:white;
+                font-weight:bold;
+                padding: 10px 10px;
+                transition: padding-right 0.3s,padding-bottom 0.3s;
+            }
+            #stretch:hover{
+                padding-right:50px;
+                padding-bottom:30px ;
+            }
+            #active{
+                background-color:green;
+                color:white;
+                border:none;
+                padding: 10px 10px;
+                font-weight:bold;
+            }
+            #active:active{
+                background-color:darkgreen;
+                padding: 12px 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="nav-button"> back </button>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <button class="nav-button">next</button>
+        <br><br>
+        <button id="stretch">stretch</button>
+        <button id="active">active</button>
+    </body>
+</html>

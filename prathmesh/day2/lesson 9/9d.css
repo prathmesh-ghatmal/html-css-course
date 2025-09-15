@@ -1,0 +1,23 @@
+div{
+    background-color: rgb(27, 27, 27);
+    padding: 10px;
+    width:300px;
+}
+
+p{
+    font-family: arial;
+    margin:0;
+}
+
+.header{
+    color:white;
+    font-weight: bold;
+    font-size:22px;
+    margin-bottom:5px;
+}
+
+.content{
+    color:rgb(139, 138, 138);
+    font-size:13px;
+    margin-top:10px ;
+}

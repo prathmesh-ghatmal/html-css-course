@@ -1,0 +1,15 @@
+div{
+    border: 1px solid black;
+    width:300px;
+    padding: 10px;
+   
+}
+
+p{
+    margin: 0;
+    padding: 10px;
+}
+
+button{
+    margin-left:10px
+}

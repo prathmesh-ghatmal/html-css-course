@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>
+            boxes example
+        </title>
+        <style>
+           .search{
+            border-radius:5px;
+            border:1px solid grey;
+            padding: 10px;
+           }
+           
+           .googlesearch{
+            width: 300px;
+            border-radius: 20px;
+            padding:10px;
+            border:1px solid grey;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.2)
+           }
+
+           p{
+            font-family:ARIAL;
+            margin: 0;
+           }
+
+           .email{
+            margin-bottom:5px;
+           }
+
+           .emptybox{
+            width:376px;
+            margin-bottom:15px;
+            height: 30px;
+            border:2px solid black;
+            border-radius:5px;
+           }
+
+           #disclaimer{
+            font-size:15px;
+        
+           }
+
+           .agreebutton{
+            background-color:rgb(9, 97, 249);
+            width: 365px;
+            color:white;
+            text-align:center;
+            padding:10px;
+            border-radius:20px;
+            margin-top:10px;
+           }
+
+           .cat4{
+            height:40px;
+            width:40px;
+            object-fit:cover;
+            border-radius: 20px;
+            vertical-align: middle;
+           }
+
+           .posttext{
+            display:inline-block;
+            
+           }
+           div{
+            align-items: center;
+            vertical-align:text-top;
+           }
+           .tweetinput{
+            vertical-align: middle;
+            border:none;
+
+           }
+
+           #tweet{
+            background-color: rgb(48, 155, 249);
+            color:white;
+            border:none;
+            padding:10px;
+            border-radius:20px;
+            font-weight:bold;
+           }
+           
+        </style>
+    </head>
+    <body>
+        <input type="text" placeholder="search"
+        class="search">
+
+        <input type="text" placeholder="Search Google or type a URL" class="googlesearch" >
+        <br><br><br><br><br><br><br>
+
+
+        <p class="email">Email</p>
+        <input class="emptybox"type="text">
+        <p id="disclaimer">By clicking Agree & Join, you agree to the Privacy Policy.</p>
+        <p class="agreebutton">Agree & Join</p>
+
+
+
+        <br><br><br><br><br><br><br>
+
+
+       
+            <img src="cat.jpg" alt="cat image" class="cat4">
+        <input class="tweetinput" type="text" placeholder="What's happening?">
+        <button id="tweet">Tweet</button>
+     
+        
+    </body>
+</html>

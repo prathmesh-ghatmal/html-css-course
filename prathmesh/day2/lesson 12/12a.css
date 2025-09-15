@@ -1,0 +1,14 @@
+.container{
+    display:flex;
+
+}
+
+.light{
+    background-color: lightblue;
+    width: 200px;
+}
+
+.pink{
+    background-color:pink;
+    width:75px;
+}

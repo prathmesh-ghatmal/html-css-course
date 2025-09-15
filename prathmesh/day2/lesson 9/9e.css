@@ -1,0 +1,29 @@
+img{
+    width:50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius:30px;
+    vertical-align: middle;
+    margin-left:5px ;
+}
+
+input{
+    border:none;
+}
+
+button{
+    background-color: rgb(44, 137, 251);
+    border: none;
+    color:white;
+    padding:5px 15px;
+    border-radius:30px;
+
+}
+
+div{
+    border:2px solid rgb(212, 211, 211);
+    padding: 10px;
+    border-radius: 8px;
+    width: 310px;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+}

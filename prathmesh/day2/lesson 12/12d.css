@@ -1,0 +1,11 @@
+.container{
+    display:flex;
+    justify-content:space-between;
+    height: 50px;
+    border:1px solid grey;
+    align-items:center;
+}
+
+.item{
+    background-color: pink;
+}

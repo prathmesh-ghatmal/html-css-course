@@ -1,0 +1,14 @@
+div{
+    position: absolute;
+    right: 10px;
+    background-color: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+body{
+    height: 3000px;
+}

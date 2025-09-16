@@ -1,0 +1,41 @@
+div {
+  position: relative;
+  width: 300px;
+}
+
+img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.discount {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: black;
+  color: white;
+  padding: 8px;
+}
+
+body {
+  height: 3000px;
+}
+
+.overlay{
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    background-color: white;
+    padding: 10px;
+}

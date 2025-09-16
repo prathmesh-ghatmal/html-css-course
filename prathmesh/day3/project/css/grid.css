@@ -1,0 +1,72 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap: 20px;
+    row-gap: 20px;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.horizontal{
+    display: flex;
+    align-items: top;
+}
+
+.channel-image{
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    margin-left: 5px;
+
+}
+
+.thumbnail{
+    width: 100%;
+}
+
+.video-title, .channel-image{
+    margin-top: 8px;
+}
+
+.video-info{
+    margin-left: 8px;
+}
+
+.video-title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.channel-name, .video-stats{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.channel-name{
+    margin-top: 10px;
+}
+
+.video-stats{
+    margin-top: 4px;
+}
+
+.thumbnail-container{
+    position: relative;
+}   
+
+.timestamp{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    background-color: black;
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 2px;
+}

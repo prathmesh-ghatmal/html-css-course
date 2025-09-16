@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    padding: 15px;
+    width: 350px;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    object-fit: cover;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.card{
+    border: 1px solid rgb(218, 217, 217);
+    display: flex;
+    border-radius:12px;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.graybox{
+    width: 80px;
+    height: 80px;
+    background-color: lightgray;
+}
+.video-title{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.name{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.username{
+    font-weight: lighter;
+    color: gray;
+}
+
+.content{
+    margin-left: 12px;
+}

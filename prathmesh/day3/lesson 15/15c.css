@@ -1,0 +1,24 @@
+.graybox{
+    position: fixed;
+    width: 320px;
+    background-color: lightgrey;
+    height: 180px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.close{
+     position: absolute;
+    left: -5px;
+    top: -5px;
+    background-color: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+body{
+    height: 3000px;
+}

@@ -1,0 +1,23 @@
+div{
+    position: relative;   
+    width: 300px;
+}
+
+img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.discount{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+
+body{
+    height: 3000px;
+}

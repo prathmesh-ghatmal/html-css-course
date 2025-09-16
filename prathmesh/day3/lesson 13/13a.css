@@ -1,0 +1,22 @@
+.container{
+ display: flex;
+ height: 80px;
+}
+
+.item1{
+    width: 100px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item2{
+ width:200px;
+ background-color: pink;
+}
+
+.inner{
+    background-color: black;
+    color:white;
+}

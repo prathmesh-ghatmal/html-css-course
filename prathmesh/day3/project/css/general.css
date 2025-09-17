@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  padding-top: 70px;
+  padding-top: 80px;
   font-family: Roboto;
   background-color: beige;
   padding-right: 20px;
@@ -12,4 +12,8 @@ body {
 
 p {
   margin: 0px;
+}
+
+a {
+  all: unset;
 }

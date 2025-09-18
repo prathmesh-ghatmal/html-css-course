@@ -2,7 +2,7 @@
 
 Welcome to the **HTML & CSS One-Shot Challenge** repository! 🎯
 
-This challenge was created to help our group learn and practice HTML and CSS from basic to advanced levels in a simple, hands-on way. The objective is to complete a one-shot video tutorial and implement the assignments within **2 hours**.
+This challenge was created to help our group learn and practice HTML and CSS from basic to advanced levels in a simple, hands-on way. The objective is to complete a one-shot video tutorial and implement the assignments within **2 Days**.
 
 ---
 
@@ -19,7 +19,7 @@ Follow along and complete the assignments step by step.
 ## ✅ Challenge Goals
 
 - Cover HTML and CSS fundamentals quickly and effectively  
-- Complete all assignments within **2 hours**  
+- Complete all assignments within **2 Days**  
 - Use only HTML and CSS (no JavaScript frameworks)  
 - Share your solutions and learn collaboratively
 

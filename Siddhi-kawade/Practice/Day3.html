@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day 3</title>
+  <style>
+    body {
+      margin: 0;
+      background: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+    }
+    .border {
+      border-color: #555;
+      padding: 15px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .card {
+      background: #f0f8ff;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .color {
+      background: #21b5c5;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      padding-top: 7px;
+      font-size: 28px;
+      font-weight: bold;
+      color: rgb(49, 52, 54);
+    }
+
+    .price span {
+      font-size: 20px;
+      font-weight: normal;
+      color: rgb(57, 55, 55);
+    }
+
+    .bill {
+      margin-bottom: 15px;
+      color: gray;
+      font-size: 12px;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0 0 20px 0;
+      text-align: left;
+    }
+
+    ul li {
+      list-style: none;
+      margin: 8px 0;
+      font-size: 13px;
+    }
+
+    ul li::before {
+      content: "✓";
+      color: green;
+      margin-right: 8px;
+    }
+
+    button {
+      background: rgb(50, 180, 232);
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: rgb(30, 140, 200);
+    }
+    .states {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      font-size: 13px;
+    }
+    .dot {
+      position: relative;
+      padding-left: 12px;
+      color: #555;
+    }
+    .dot::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: teal;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="border">
+    <div class="card">
+      <div class="color">Basic Plan</div>
+
+      <div class="price">$19<span>/month</span></div>
+      <div class="bill">Billed monthly</div>
+
+      <hr>
+
+      <ul>
+        <li>Access to basic features</li>
+        <li>10GB cloud storage</li>
+        <li>Email support</li>
+      </ul>
+
+      <button>Get Started</button>
+
+      <div class="states">
+    <span class="dot default">Default</span>
+    <span class="dot hover">Hover</span>
+    <span class="dot active">Active</span>
+  </div>
+  </div>
+</body>
+</html>

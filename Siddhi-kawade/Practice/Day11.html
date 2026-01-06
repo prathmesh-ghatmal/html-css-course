@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 11</title>
+  </head>
+  <Style>
+    body{
+      background-color: white;
+    }
+    .contact-section{
+      min-height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 70px 80px;
+      background:url("day 11 backdrop.png") no-repeat center;
+    }
+    .left{
+      flex: 1;
+      margin-top: 70px;
+      margin-right: 50px;
+    }
+    .right{
+      border-radius: 5px;
+      margin-left: 190px;
+      margin-top: 70px;
+      background-color: white;
+      width: 330px;
+      height: 480px;
+      padding: 50px 50px 50px 50px;
+    }
+    .button{
+      background-color: rgb(39, 130, 222);
+      color: white;
+      border: none;
+       width: 270px;
+      height: 30px;
+      border-radius: 5px;
+      padding: 0% 2% 0% 2%;
+      
+    }
+    .input{
+      margin-bottom: 12px;
+      width: 270px;
+      height: 30px;
+      padding: 2% 4% 2% 4%;
+      border-radius: 5px;
+      border-color: rgb(230, 230, 230, 230);
+    }
+    .color{
+      color: grey;
+    }
+
+  </Style>
+  <body>
+    <section class="contact-section">
+      <div class="left">
+        <h3>Get Started with 
+          your Free Account</h3>
+        <p class="color">Sign up today and unlock the full potential of our platform.
+        Experience cutting-edge features to grow your business like never before</p>
+      </div>
+
+      <div class="right">
+        <form>
+          <h1>Create your Account</h1>
+          <label>Full Name</label><input class="input" type="text" placeholder="Full Name">
+          <label>Email</label><input class="input" type="email" placeholder="Email">
+          <label>Password</label><input class="input" type="password" placeholder="Password">
+          <label>Confirm Password</label><input class="input" type="password" placeholder="Confirm Password"><br><br>
+          <input type="checkbox" name="terms"> I agree to the<a href="#"> terms of Service</a><br> <br>
+          <button class="button" type="submit">Sign Up</button>
+          <center><div>Already have an account? <a href="#">Log in</a></div></center>
+        </form>
+      </div>
+
+    </section>
+
+  </body>
+
+</html>

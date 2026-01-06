@@ -9,6 +9,11 @@
         height: 36px;
         width: 100px;
         margin-right: 8px;
+        transition: opacity 1s;
+    }
+    .uber:hover{
+        /* background-color: red; */
+        opacity: 0.5;
     }
 
     .amazon{
@@ -23,6 +28,11 @@
         margin-right: 8px;
 
     }
+    .amazon:hover{
+        background-color: rgb(255, 157, 0);
+      
+    }
+   
 
     .github{
         background-color: rgb(46, 164, 79);
@@ -32,7 +42,11 @@
         width: 100px;
         font-weight: bold;
         border-radius: 5px;
+        
 
+    }
+    .github:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
     }
 
     .Bootstrap{
@@ -44,7 +58,9 @@
         font-weight: bold;
         border-radius: 5px;
         margin-right: 8px;
-
+    }
+    .Bootstrap:hover{
+        background-color: rgb(48, 15, 98);
     }
 
     .Bootstrap2{
@@ -57,17 +73,24 @@
         width: 100px;
         border-radius: 5px;
     }
+    .Bootstrap2:hover{
+        background-color: gray;
+        color: white
+        
+    }
 
     .Linkedln{
         background-color: rgb(10,102,194);
-        color: white;
-        border: none;
+        color: white; 
+         border: none;
         font-weight: bold;
         height: 36px;
         width: 200px;
         border-radius: 50px;
-        margin-right: 15px;
-
+        margin-right: 15px; 
+    }
+    .Linkedln:hover{
+        background-color: rgb(4, 53, 102);
     }
 
     .Linkedln2{
@@ -78,10 +101,20 @@
         border-radius: 50px;
         border-color: rgb(10,102,194);
         border-style: solid;
+        transition: opticity 1s;
+    }
+    .Linkedln2:hover{
+        background-color:rgb(138, 186, 234);
     }
 
-    .amazon2{
-        background-color: orange;
+
+    .link:hover{
+        color: orange;
+    }
+
+
+    .amazon2{ 
+         background-color: orange;
         border-radius: 50px;
         font-size: 15px;
         border: none;
@@ -89,7 +122,10 @@
         width: 100px;
          margin-left: 8px;
         margin-right: 8px;
-    }
+    } 
+    .amazon2:active{
+        background-color: rgb(232, 170, 57);
+    }  
 
     .stock{
         color: rgb(0,118,0);
@@ -106,9 +142,9 @@
 <button class="Linkedln">Apply on company website</button>
 <button class="Linkedln2">Save</button><hr>
 
- <a href="https://www.amazon.com">Back to Amazon</a>
+ <a href="https://www.amazon.com" class="link">Back to Amazon</a>
  <h1>Nike Black Running Shoes</h1>
  <p class="stock"><b>$39 - in stock</b></p>
  <p>Free delivery tommorow.</p>
  <button class="amazon">Add to Cart</button>
- <button class="amazon2">Buy now</button>
+ <button class="amazon2">Buy now</button> 

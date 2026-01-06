@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #e5e7eb;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* SMALL CARD */
+    .card {
+      width: 360px;              /* 📱 mobile width */
+      background: #ffffff;
+      padding: 14px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    /* TITLE */
+    .card h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    /* AUTHOR */
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .author img {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+    }
+
+    .author-details {
+      font-size: 12px;
+      color: #555;
+    }
+
+    .author-details strong {
+      font-size: 13px;
+      color: #000;
+    }
+
+    /* IMAGE */
+    .blog-img {
+      width: 100%;
+      height: 160px;             /* 🔽 fixed small height */
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 12px 0;
+    }
+
+    /* TEXT */
+    p {
+      font-size: 13px;
+      line-height: 1.5;
+      margin: 8px 0;
+    }
+
+    h2 {
+      font-size: 15px;
+      margin: 12px 0 6px;
+    }
+
+    ul {
+      padding-left: 16px;
+    }
+
+    li {
+      font-size: 13px;
+      margin: 4px 0;
+    }
+
+    a {
+      font-size: 13px;
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>The Future of Web Development</h1>
+
+    <div class="author">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMQERUTExEOEhAQEBIQExAQEBAQDxEVGBIXFhcRExcYHSghGBonGxMVITEhJSkrMC4uGCAzODMtQygtMCsBCgoKDg0OGxAQGislHiYwLSstLi0tKy0tLS0tKystLS0rLS0tKzYtLS0tKy4rNS0tMDUtLy0tLS0tLSsrLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAcDBQYCCAH/xABCEAACAQMABgcFBAgFBQEAAAAAAQIDBBEFEiExUWEGBxNBcYGRIjJSocFigrHRFCMzQkOSsvBTY6LC4WRyc6OzNf/EABkBAQADAQEAAAAAAAAAAAAAAAABAgQDBf/EACQRAQEAAgICAgICAwAAAAAAAAABAhEDBBIxIUEiYVFxMkKB/9oADAMBAAIRAxEAPwC8QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHmdRLe0jBO9ityb+SGkbiSCDK+fcl57Tx+mS+z6E6qPKNiDXfpkuXoeo3z70vmhqnlE8EWN6u9NfMzwqxluaf4kaTuPYACQAAAAAAAAAAAAAAAAAAAAAAIlxd42R38e7yCLdM9Wso735d5Cq3cnu2L5mBvJ+F5FLlRsA81KiinKTUYxWXKTSilxbe5EqvQOM0x1iW9JuNGMriS/eT7Oj5Sabfksczm7jrGu5P2Y20Fw1Jyfq5fQ4ZdjDH7d8eryZfS1wVLT6xLxb1bS5SpSX9MkbrR3WZFvFe3cV8dGWsvFwljZ5sTs8dTl1OSfSwAQ9F6Uo3UNejUjUj342Si+EovbF+KJh2ll9M9lnxWeldSXNcH+ZNo3ClyfBmrAsTMrG5BBt7vul6/mTkymnSXYAAkAAAAAAAAAAAAAACJe18eyt/f+QRbp4urnOxbu98eREALyOVuwA81KiinKTSjFOTk9iSSy2+WCRC03pelZ0nVqvC3Rits6ku6EV3v8CoekfSatfS9t6lJPMaEW9RcHL45c35JHnpVp2V9XdTaqUcxowf7sM+818Ut78l3I055vNzXO6np6vX68wm77AAZ2kAAEiwvqlvUVSlOUKkd0o964NbmuT2Ft9D+lUb6OrJRhcwWZwXuzW7tKee7iu7PgynDPY3c6FSNWnLVqU5a0Xz4Pimsprg2duLluF/TjzcM5J+30ACDoTScbqhCtHYqkdsd+pJbJQ8mmTj05dzcePZZdUJFrcaux+7+BHBJLpuUwQbKvj2Xu7uXInFK6y7AAQkAAAAAAAAAAGOvV1Vn08TVt5M97UzLHdH8SOXkc8r8gAJVDjOs7S3ZW8aEXidy3rY7qccOXq3Fc1rHZlM9PdIdvfVcPMaOKEfuZ1v9bmcOxn44f20dXDy5P6c8ADzHrAAAAH5KSSy9yA/QTbXRNSdSFJRfb1MSlF7FRhjK1+Dw9Z8MxW/KIKeSRYXVRpH2q1u3saVeC5rEJ/jT9GWMUZ0Z0j+jXdKq3iMZqM+GpL2ZN+CefIvM9Dq5bw1/Dy+3hrPf8gANLKGytausua2P8zWmW2qasuT2MixON1W0ABR1AAAAAAAADzVnhN8EeiLfy9nHFiIvpAbAB0cgAAY7isqcJTe6EZTfhFNv8D59nUc25S2yk3KT4tvLfqy8Olk9WxuX/wBPUXrFr6lHGHt35keh0p8WgB6p03JqMYylJ7oxTlJ+CRjbnkG6s+it3V/guC+Kq1TS8V73yOk0b0Epx216kqj+CnmEPBy95+WBscRZWdStLUpQlUnwit3OT3RXN4Olt+j36NKKajcX8vapUFtoUP8APqt78d2cLO5PedvTtVSh2dCFOlHiorVXPH70vH57n7s7KFJPVy5TetOpJ61SpL4pvv8ADctySI2nSFoDQkbaLbbqVqu2rWe+Tby0uWX57yqrm3dKcqb305Sg/uvH0LqOF6wNDYf6TBbHqxqrg90Z+eyPpxIlHFsvPovdutZ0KjeZSoxUnxlH2ZP1iyjC5Orz/wDOo+Nb/wC8zb1L+VYu7Pwl/bowAb3mgAA2ltPWiuO5mUhaPlvXn/fyJpSusvwAAhIAAAAAEHSD2pcs/wB+hONdfe/5Ime1cvSOAC7mAADT9MFmxuf/AATfos/QpAvfpDT17S4j8VtWX/rkUQYO3/lHo9K/jXqhSlUnCnBZqVJKEV3Zb3vl3+RbWgtDU7SmowWZtLXqte3UfPguC7jhurm1VS7nUe1UaTxylN6qf8qn6llmTL+G2AAKLAAAGv6QW3a21WCwnKm8N7k1tTfmjYGG9/Zz/wCyX4MIVBpCylQm4Sw2lGSa3NNZT+Zc3Q+jqWNuuNCE/wCf2/8AcU5pqs6labW157OP3UoL5x+ZfFCkoRjBboRjBeCWPob+pPm1h71+JHsAG55wAAJFi/b8U19fobE1dr768fobQpk6YegAELAAAAAAa6+9/wAkbEgaQW1Pivr/AMkz2rl6RQAXcwAAY7inrQlH4oSj6po+eobl4I+iJTUU5PYopyb4JbWz56bztSwm8pcFwMXb+m/o/wC3/HXdVklrXK78UX5Zqfmd+VZ0BvOyvVFv2a8JU+Wt78f6WvvFpmHL234+gAFVgAACHpiuqdCpJ7owZMON6xtLqnTVvH9pWWtL7MM42+O1eTJk3UW6cXoda9einvnXpJ/eqRz+Jf7PnmjNwcZR2Sg4yi+Di8p+qL+0fdxr0oVY+7VhGa5ZWcPmt3kb+pZ8x53dl/GpAANrCAADLa++vH6G0NbZL21yTf8AfqbIrk6YegAFVgAAAAAIt/HYnwf4ko8Voa0WuKERfTUgA6OQAAOW6xdLq3tJQT/WXOaUV3qH8SXhqvV8ZIqEu/SWibZTld149o6VNyTqvWp0oQWtiEN2/Ly03l7ylLmu6k51GsOpOdRpbk5ScmvVnn9qXy3XpdOzx1GCcnFxnF4lCSknwaeU/JouHQOlY3dCNWOMtYnH4Jr3o/lyaZUJ1HVnWcaldbdVxpvHdlSks+O0y302T2sYH5GWdx+lFgAN4Aw3t3CjTlUqPVhCLlJ/RcW9yXFlNaSv5XVedaWzWeVHeoxWyMPJL1y+873rFr5tMdzq01+L+hXtOOEXx9bVynzp68d3qW30It7i1Ttq0Nall1KFxTevSae2UG98fiWslvfIqQuDq90sri0jFv8AWW2KMl36qX6uX8qx4xZp6uvNl7e/D9OnAB6LywAATNHx3vyJphtIYiue0zFK6z0AAhIAAAAAAADW3lPEuT2/mYDaXNLWjzW1GrLyuWU1QGG8u6dGDqVZwp0475zkoxXm+/kcDpfrSpRbjbUnU3/rq2YQ3bHGGNaXnqi2Qxxtuoy9Z+nVGKtIP2p6s62O6K2xp+LeH4JcStxUvXWnKcpSnOTcpTlvk2weXzZXLLdexw4Y44agdX1cUNlep3SlCC8k5P8AricjWlhc3sO+6BTX6Lq7MwqyT55SeX648jnZfG11xs85HSxk1uMyuH3r6GAHDbtZKzu55GKc2955BOySRoOm9HWtJfYqU5eWuo/7ivyyulNVRtKrffFQXjKSX1K1OmMvjtyzs8tB3vQrRFxRVK8t5QrUqsXCvQz2dTCk4yUc+zJpxbTbXDvbOCJtj0nu7LCo1mqeW3SlGM6bfHDWV5NHfg15/LP2N+HwvoFY6H61tqjdW+FszVt22lzdOT3eEn4FhaL0pRuqaqUKkKkHszF7Yv4ZJ7Yvk8M9PbybLEwyUKetJL18DGbGzpaqy97+SFpjN1IABR1AAAAAAAAAAANL0lu4WlCpczUnClHWkoRcpPuWFzbW17Fvfebo81IKScZJOMk04tJpp7Gmu9BFm3zH0l6R17+pr1XiEW+zoxb7OkuXGWN8ntfJYS1B3fWR0DlYTdehFyspvallu2bfuS+xwl5Pub4anDWaXEW/dTJv4ibaQxHx2mVvBiqV4x58kQLqvJ9+FwRgnHlyZbeheXDjx02CWXl+SOw6v6/t1afGManhh4b/ANUTkYSyk+KTOi6AaQ/R9IUJN4jOToy8JrVS/m1fQ1Xhlw8GXHmsz86sAHa19F0Z76cc8Y+y/kRZdHqL/wAReEl9UYr1M/rTbO7hfcrlAdVHo9S41H4yX0RJo6Iow3U4t/azL8ROpn96Te7x/W1SdPq+KNOH+JUcvFQX5yRw6Z2nW1f9pfdmsattSjDC7pS9qXycPQ4o2Y8EmHhWLLnt5POPRjuIZi/Uh0L15edsctritu4nQmnueTJlhlx3bXjyY8k01hO0LpitZ1VVoT1Z7mnthUXwVI/vL8O7BErw1ZNengdN0D6GVNJ1cvWhaU5fra27P+VT4zfHdFbX3J+hLubjzrNXVXL0L0tHSNvG4UZQWXCcJJ4U471F49qPNeGx5S6cwWNnToU40qUIwpU4qMIR3JL+95nJ2rJoAASAAAAAAAAAAAAAPNWmpRcZJSjJOMoyScZJrDTT3rBTXTzqvnRcq9jGU6XvStVl1afF0vjj9neu7O5XOAPkr6bP+DxUWw+iel/V9a6QzPHYXL/j0kvaf+bDdPu27Hs3lPdJOgl7Y5c6Tq0V/HoJ1IY4zXvQ81jmwNLYTzBcm1/fqSYyaaaeJJpp96a2pmu0fVSbWdksYfcbAD6R6O6RV1bUqy/iU4ya4PG2Pk8ryNiVn1N6YzCpaye2D7WmvsyftJeEtv30WYAMV1XVOEpyaUYRcm3uSSzkynD9bGmOxtOyi/buX2fPU3zfhj2fvoCntJ3ruK1StLOatSU8Pek3lR8lheRCuZ4g3yx67DIQtIVf3Vvzl8gItJbDIpY25xz3G76OdEby/wAdhRl2b/j1M06C56z97wimy3+iPVjbWbVSs1c3Cw05xxQpvjCHe/tSzuysAcJ0J6uq1+41rnXo2q2pNateuuEV+7D7T2tbt+srvsbOnQpxpUoRp0qa1YwisRS/vvM4Ik16Tbb7AASgAAAAAAAAAAAAAAAAAAAAAc1p7oHYXrcqttCNR7e1ot0ajfGTjhT+8mclfdUWP2F3J43RuKabfjOGP6S0gBUGhuhGkbC5p1oQo1VCWJKlWScoPZJfrFHbjauaRbsG8bVh96PQA/GVb0v6J6Q0jdymqdKnSguzpdrWik1vc8Q1msvlnCiWmAKpsOqOb/b3UY8Y0Kbk/Kc8f0nU6E6uNH2rUlQ7aosPtLmXbPK71F+wnzUUdaAPxLHgj9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z" alt="Author">
+      <div class="author-details">
+        <strong>John Doe</strong>
+        April 24, 2024 · 5 min read
+      </div>
+    </div>
+
+    <img
+      src="https://www.productiveinsights.com/hubfs/Computer-Code-image-Depositphotos_15383137_m-1.jpg"
+      alt="Coding"
+      class="blog-img"
+    >
+
+    <p>
+      Web development is evolving rapidly with new technologies and trends
+      emerging every year. In this article, we will explore some of the key
+      trends and technologies that are shaping the future of web development.
+    </p>
+
+    <h2>Key Trends in Web Development</h2>
+    <ul>
+      <li>Progressive Web Apps (PWAs)</li>
+      <li>Single Page Applications (SPAs)</li>
+      <li>Serverless Architecture</li>
+    </ul>
+
+    <h2>The Importance of Learning Continuously</h2>
+    <p>
+      Staying updated with the latest web development trends and technologies
+      is crucial for any developer.
+      <a href="#">Continuous learning</a> and adaptability are key to thriving
+      in this ever-changing field.
+    </p>
+
+    <p>
+      As the web development landscape continues to evolve, developers need to
+      be adaptable and proactive in learning new skills. By staying informed
+      about emerging trends and technologies, you can ensure that your skills
+      always remain relevant in the industry.
+    </p>
+  </div>
+
+</body>
+</html>

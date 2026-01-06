@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Layouts techniques</title>
+    <style>
+        .thumbnail {
+            width: 300px;
+            display: block;
+           
+        }
+        .SearchBar {
+            font-size: 20px;
+            margin: 12px; 
+            display: block;
+            padding: 5px;
+            width: 280px;
+        }
+        .video-card {
+            width: 300px;
+            display: inline-block;
+            margin: 15px;
+            vertical-align: top;
+            font-family: Arial, sans-serif;
+        }
+        .thumbnail-row {
+            margin-bottom: 12px;
+        }
+        .video-details {
+            display: flex; 
+            align-items: flex-start;
+        }
+        .cat-picture {
+            margin-right: 10px;
+        }
+        .profile-pic {
+            width: 40px;
+            border-radius: 50%;
+        }
+        .video-info {
+            flex: 1;
+    }
+        .videoTitle {
+            font-weight: bold;
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            /* line-height: 1.3em; */
+        }
+        .videoAuthor {
+            color: #606060;
+            font-size: 13px;
+            margin: 0;
+        }
+        .videoStats {
+            color: #606060;
+            font-size: 12px;
+            margin: 3px 0 0 0;
+        }
+
+    </style>
+</head>
+<body>
+    <input class="SearchBar" type="text" placeholder="search">
+
+
+    <div class="video-card">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="E:\html\html-css-course\Siddhi-kawade\imgs\sunder.png">
+        </div>
+
+        <div class="video-details">
+            <div class="cat-picture">
+                <img class="profile-pic" src="E:\html\html-css-course\Siddhi-kawade\imgs\cat.png">
+            </div>
+
+            <div class="video-info">
+                <p class="videoTitle">
+                    Talking tech <strong>AI with Google CEO</strong> Sunder Pichai!
+                </p>
+                <p class="videoAuthor">Marques Brownlee</p>
+                <p class="videoStats">3.4M views · 6 months ago</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

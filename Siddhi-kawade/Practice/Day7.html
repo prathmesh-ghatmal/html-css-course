@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 7 – Contact</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #eef4fb;
+    }
+
+    .contact-section {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("background.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .contact-box {
+      width: 90%;
+      max-width: 1100px;
+      padding: 50px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    /* LEFT SIDE */
+    .contact-left {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .contact-left h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .contact-left p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .input-row {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .input-row input {
+      flex: 1;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      outline: none;
+      font-size: 14px;
+    }
+
+    textarea {
+      height: 130px;
+      resize: none;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: #0d6efd;
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0b5ed7;
+    }
+
+    /* RIGHT SIDE */
+    .contact-right {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-img {
+      width: 320px;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      margin-top: auto;
+      margin-left: auto;
+    }
+
+    .info p {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      font-size: 15px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+<section class="contact-section">
+  <div class="contact-box">
+
+    <!-- LEFT -->
+    <div class="contact-left">
+      <h1>Get in Touch</h1>
+      <p>Have any questions? We'd love to hear from you!</p>
+
+      <div class="input-row">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+      </div>
+
+      <div class="input-row">
+        <input type="text" placeholder="Phone Number">
+        <input type="text" placeholder="Subject">
+      </div>
+
+      <textarea placeholder="Message"></textarea>
+      <button>Send Message</button>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="contact-right">
+      <div class="info">
+        <p>📞 +91 9511659690</p>
+        <p>✉️ may....@gmail.com</p>
+        <p>📍 Pune, India</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

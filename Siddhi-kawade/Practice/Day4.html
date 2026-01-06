@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 4 Navbar</title>
+  </head>
+  <style>
+    body{
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e5e7eb;
+    }
+    img{
+      width: 70px;
+      height: 60px;
+    }
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .design{
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+    .color{
+      margin-left: 0px;
+      background: #5472ed;
+      padding: 15px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      width: 150px;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .cursor:hover{
+      cursor: pointer;
+      color: #5472ed;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <nav>
+      <img src="data:image/png;base64,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" alt="Logo">
+
+      <ul class="design">
+        <li>Home</li>
+        <li>About</li>
+        <li class="cursor">Service</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+
+      <button class="color">Get Started</button>
+    </nav>
+  </body>
+</html>
